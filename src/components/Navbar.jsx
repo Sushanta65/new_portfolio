@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-red-600 text-white shadow-lg fixed">
+    <div className="navbar fixed top-0 left-0 w-full z-50 bg-red-600 text-white shadow-lg  mb-20">
       <div className="w-11/12 mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex-1">
@@ -46,8 +46,8 @@ const Navbar = () => {
         >
           <ul className="menu lg:menu-horizontal px-4 py-4 lg:py-0 lg:px-1 flex flex-col lg:flex-row gap-4 lg:gap-5">
             <li>
-              <NavLink
-                to="/"
+              <a
+                href="#home"
                 className={({ isActive }) =>
                   isActive
                     ? 'active text-blue-300 bg-red-900 px-2 py-1 rounded'
@@ -55,23 +55,19 @@ const Navbar = () => {
                 }
               >
                 Home
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  isActive
-                    ? 'active text-blue-300 bg-red-900 px-2 py-1 rounded'
-                    : 'px-2 py-1'
-                }
+              <a
+                href="#about"
+                
               >
                 About
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink
-                to="/skills"
+              <a
+                href="#skills"
                 className={({ isActive }) =>
                   isActive
                     ? 'active text-blue-300 bg-red-900 px-2 py-1 rounded'
@@ -79,11 +75,11 @@ const Navbar = () => {
                 }
               >
                 Skills
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink
-                to="/projects"
+              <a
+                href="#projects"
                 className={({ isActive }) =>
                   isActive
                     ? 'active text-blue-300 bg-red-900 px-2 py-1 rounded'
@@ -91,11 +87,23 @@ const Navbar = () => {
                 }
               >
                 Projects
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink
-                to="/contact"
+              <a
+                href="#education"
+                className={({ isActive }) =>
+                  isActive
+                    ? 'active text-blue-300 bg-red-900 px-2 py-1 rounded'
+                    : 'px-2 py-1'
+                }
+              >
+                Education
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
                 className={({ isActive }) =>
                   isActive
                     ? 'active text-blue-300 bg-red-900 px-2 py-1 rounded'
@@ -103,7 +111,7 @@ const Navbar = () => {
                 }
               >
                 Contact
-              </NavLink>
+              </a>
             </li>
           </ul>
         </div>

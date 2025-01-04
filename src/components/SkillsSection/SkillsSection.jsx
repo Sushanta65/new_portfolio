@@ -88,17 +88,19 @@ const SkillsSection = () => {
   ];
 
   return (
-    <div className="py-20 bg-base-100">
+    <div id="skills" className="py-20 bg-base-100">
       <div className="w-4/5 mx-auto">
         {/* Heading and Introduction */}
-        <h2 className="text-4xl font-bold text-center mb-4 text-base-content">
-          My <span className="text-red-600">Skills</span>
-        </h2>
-        <p className="text-center text-lg text-base-content/70 mb-10">
+        <div className="text-center mb-20 ">
+          <h2 className="text-4xl font-bold text-center mb-5 ">
+            My <span className="text-red-600">Skills</span>
+          </h2>
+          <p className='w-4/5 mx-auto'>
           Over the years, I’ve built expertise in a variety of modern web technologies. Below is a showcase of my key
           skills, their proficiency levels, and how I use them in development.
-        </p>
-
+          </p>
+        </div>
+        
         {/* Skills Cards Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {skills.map((skill, index) => (

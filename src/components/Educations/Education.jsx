@@ -28,11 +28,16 @@ const EducationSection = () => {
   ];
 
   return (
-    <div className="py-16 border-t">
+    <div id='education' className="pb-16 pt-20">
       <div className="w-4/5 mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-10">
-          My <span className="text-blue-600 dark:text-blue-400">Education</span>
-        </h2>
+      <div className="text-center mb-20 ">
+          <h2 className="text-4xl font-bold text-center mb-5 ">
+            My <span className="text-red-600">Education</span>
+          </h2>
+          <p className="w-4/5 mx-auto"> 
+          "Here is a glimpse of my educational journey, showcasing my academic achievements and milestones. These experiences have shaped my knowledge and skills, laying the foundation for my professional growth."
+          </p>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {educationData.map((item, index) => (
             <div

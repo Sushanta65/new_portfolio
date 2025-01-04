@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutMe = () => {
   return (
-    <div className="bg-base-100 text-base-content py-20">
+    <div id='about' className="bg-base-100 text-base-content py-20">
       <div className="w-4/5 mx-auto">
         <h2 className="text-4xl font-bold text-center mb-6">
           About <span className="text-red-600">Me</span>
@@ -13,7 +13,7 @@ const AboutMe = () => {
         
         <div className="space-y-6 text-lg leading-relaxed">
           <p>
-            Hello! My name is <span className="font-bold text-red-600">Susanto CD</span>, and I’m a dedicated frontend developer with over 6 years of experience in web development. 
+            Hello! My name is <span className="font-bold text-red-600">Susanto Chandra Das</span>, and I’m a dedicated frontend developer with over 6 years of experience in web development. 
             Despite coming from a humanities background, I’ve built a strong foundation in modern technologies like React.js, JavaScript, and Tailwind CSS.
           </p>
           <p>

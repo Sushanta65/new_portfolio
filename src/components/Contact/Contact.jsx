@@ -1,83 +1,109 @@
+import React from "react";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaFacebook,
+  FaLinkedin,
+  FaInstagram,
+} from "react-icons/fa";
 
-const Contact= () => {
+const ContactSection = () => {
   return (
-    <div className="py-16 bg-gray-50 dark:bg-gray-900">
-      <div className="w-4/5 mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-10 text-gray-800 dark:text-gray-100">
-          Get in <span className="text-blue-600 dark:text-blue-400">Touch</span>
-        </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
+    <div id="contact" className="py-16 mt-10">
+      <div className="w-4/5 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+        {/* Left Side - Contact Information */}
+        <div>
+          <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
+          <p className="mb-6 text-gray-400">
+            Feel free to contact me if you think I am perfect for your job or if
+            these services match your needs. I will reply to you as soon as
+            possible.
+          </p>
+          <div className="space-y-4">
+            <div className="flex items-center">
+              <FaEnvelope className="text-red-500 text-xl mr-4" />
+              <p>susanto.chandra001@gmail.com</p>
+            </div>
+            <div className="flex items-center">
+              <FaPhone className="text-red-500 text-xl mr-4" />
+              <p>(+880)-1855347765</p>
+            </div>
+            <div className="flex items-center">
+              <FaMapMarkerAlt className="text-red-500 text-xl mr-4" />
+              <p>Gazipur, Dhaka, Bangladesh</p>
+            </div>
+          </div>
+          <div className="flex space-x-6 mt-6">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook className=" hover:text-red-500 text-2xl" />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className=" hover:text-red-500 text-2xl" />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className=" hover:text-red-500 text-2xl" />
+            </a>
+          </div>
+        </div>
+
+        {/* Right Side - Contact Form */}
+        <div>
+          <h2 className="text-3xl font-bold mb-4">Say Somethings</h2>
           <form
-            className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg"
+            className="space-y-6"
             onSubmit={(e) => {
               e.preventDefault();
-              alert('Your message has been sent!');
+              alert("Your message has been sent!");
             }}
           >
-            <h3 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
-              Send an Email
-            </h3>
-            <div className="mb-4">
-              <label className="block text-gray-600 dark:text-gray-300 mb-2" htmlFor="name">
-                Your Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                className="w-full px-4 py-2 border rounded-md dark:border-gray-700 focus:ring focus:ring-blue-300 dark:focus:ring-blue-600"
-                required
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-gray-600 dark:text-gray-300 mb-2" htmlFor="email">
-                Your Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="w-full px-4 py-2 border rounded-md dark:border-gray-700 focus:ring focus:ring-blue-300 dark:focus:ring-blue-600"
-                required
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-gray-600 dark:text-gray-300 mb-2" htmlFor="message">
-                Message
-              </label>
-              <textarea
-                id="message"
-                rows="4"
-                className="w-full px-4 py-2 border rounded-md dark:border-gray-700 focus:ring focus:ring-blue-300 dark:focus:ring-blue-600"
-                required
-              ></textarea>
-            </div>
+            <input
+              type="email"
+              placeholder="Email"
+              className="w-full px-4 py-2  border  rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Full Name"
+              className="w-full px-4 py-2  border  rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              className="w-full px-4 py-2  border  rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+              required
+            />
+            <textarea
+              placeholder="Message"
+              rows="5"
+              className="w-full px-4 py-2  border  rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+              required
+            ></textarea>
             <button
               type="submit"
-              className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 dark:hover:bg-blue-500"
+              className="px-6 py-2 bg-transparent border border-red-500 text-red-500 rounded hover:bg-red-500 hover:text-white transition"
             >
               Send Message
             </button>
           </form>
-
-          {/* Contact Info */}
-          <div className="space-y-6">
-            <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
-              <h4 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Email</h4>
-              <p className="text-gray-600 dark:text-gray-300">example@gmail.com</p>
-            </div>
-            <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
-              <h4 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Phone</h4>
-              <p className="text-gray-600 dark:text-gray-300">+880 1234 567890</p>
-            </div>
-            <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
-              <h4 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">WhatsApp</h4>
-              <p className="text-gray-600 dark:text-gray-300">+880 1234 567890</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Contact;
+export default ContactSection;
