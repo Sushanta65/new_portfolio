@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
 
 html {
     scroll-behavior: smooth;
   }
 
   body {
-    margin-top: 4rem; /* Adjust this based on the navbar height */
+    margin-top: 4rem;
+    font-family: "Sora", serif;
   }
