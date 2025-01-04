@@ -47,23 +47,23 @@ const ProjectsSection = () => {
   };
 
   return (
-    <div className="py-16 bg-gray-50">
+    <div className="py-16">
       <div className="w-4/5 mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-10 text-gray-800">
+        <h2 className="text-4xl font-bold text-center mb-10 ">
           My <span className="text-red-600">Projects</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="p-5 border border-gray-300 rounded-lg shadow-lg bg-white hover:shadow-2xl transition-shadow"
+              className="p-5 border border-gray-300 rounded-lg shadow-lg  hover:shadow-2xl transition-shadow"
             >
               <img
                 src={project.image}
                 alt={project.name}
                 className="w-full  object-cover rounded-md mb-4"
               />
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-semibold  mb-2">
                 {project.name}
               </h3>
               <button
@@ -78,25 +78,25 @@ const ProjectsSection = () => {
 
         {selectedProject && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-            <div className="bg-white p-8 rounded-lg shadow-lg w-3/4 max-h-[90vh] overflow-auto flex">
+            <div className="bg-gray-900 p-8 rounded-lg shadow-lg w-3/4 max-h-[90vh] overflow-auto flex gap-5">
              <div>
-             <h3 className="text-2xl font-bold text-gray-800 mb-4">
+             <h3 className="text-2xl font-bold mb-4">
                 {selectedProject.name}
               </h3>
-              <p className="text-gray-700 mb-2 font-semibold">Main Technologies:</p>
+              <p className=" mb-2 font-semibold">Main Technologies:</p>
               <ul className="list-disc list-inside mb-4">
                 {selectedProject.technologies.map((tech, index) => (
-                  <li key={index} className="text-gray-700">{tech}</li>
+                  <li key={index}>{tech}</li>
                 ))}
               </ul>
-              <p className="text-gray-700 mb-4">{selectedProject.description}</p>
-              <p className="text-gray-700 mb-4">{selectedProject.details}</p>
-              <div className="flex space-x-4">
+              <p className=" mb-4">{selectedProject.description}</p>
+              <p className=" mb-4">{selectedProject.details}</p>
+              <div className="flex space-x-4 mt-10">
                 <a
                   href={selectedProject.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
+                  className="btn btn-sm bg-green-600 text-white rounded hover:bg-green-700"
                 >
                   Live Link
                 </a>
@@ -104,14 +104,14 @@ const ProjectsSection = () => {
                   href={selectedProject.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-900"
+                  className="btn btn-sm bg-gray-800 text-white rounded hover:bg-gray-900"
                 >
                   GitHub Link
                 </a>
               </div>
               <button
                 onClick={handleCloseDetails}
-                className="mt-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+                className="btn btn-sm bg-red-600 text-white rounded hover:bg-red-700 mt-5"
               >
                 Close
               </button>

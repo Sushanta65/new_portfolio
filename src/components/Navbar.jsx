@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-red-600 text-white shadow-lg sticky">
+    <div className="navbar bg-red-600 text-white shadow-lg fixed">
       <div className="w-11/12 mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex-1">
