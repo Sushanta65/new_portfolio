@@ -14,7 +14,8 @@ const ProjectsSection = () => {
       description:
         "A system to manage marathon events including participant registration, results, and real-time updates.",
       liveLink: "https://marathon-management.web.app/",
-      githubLink: "https://github.com/programming-hero-web-course2/b10a11-client-side-Sushanta65",
+      githubLink:
+        "https://github.com/programming-hero-web-course2/b10a11-client-side-Sushanta65",
       details: `This project aimed to digitize the process of managing marathons. During development, challenges included ensuring scalability for large events and handling real-time updates efficiently. Future improvements include enhancing the UI and adding analytics for event organizers.`,
     },
     {
@@ -25,7 +26,8 @@ const ProjectsSection = () => {
       description:
         "Crowdcube is an intuitive and user-friendly platform that enables users to create, explore, and contribute to campaigns. Designed with simplicity and accessibility in mind, the platform ensures that anyone can make a difference by starting or supporting a campaign. With seamless navigation, theme toggling, and personalized user experiences, Crowdcube is your go-to solution for online donations and campaigns.",
       liveLink: "https://crowdcube-bfdbf.web.app/",
-      githubLink: "https://github.com/programming-hero-web-course2/b10-a10-client-side-Sushanta65",
+      githubLink:
+        "https://github.com/programming-hero-web-course2/b10-a10-client-side-Sushanta65",
       details: `Users can create, view, and manage campaigns with detailed information such as titles, types, and donation amounts. Quickly sort campaigns by donation amounts and filter active or inactive campaigns for easy navigation.`,
     },
     {
@@ -36,7 +38,8 @@ const ProjectsSection = () => {
       description:
         "A platform connecting donors and recipients for winter clothing donations across Bangladesh.",
       liveLink: "https://winter-cloth-donation-app.web.app/",
-      githubLink: "https://github.com/programming-hero-web-course1/b10-a9-authentication-Sushanta65",
+      githubLink:
+        "https://github.com/programming-hero-web-course1/b10-a9-authentication-Sushanta65",
       details: `This project tackled the social issue of distributing winter clothing. Challenges included creating a seamless user experience for non-tech-savvy users. Future plans involve integrating a map feature for donation centers and improving backend performance.`,
     },
   ];
@@ -90,13 +93,17 @@ const ProjectsSection = () => {
                 <h3 className="text-2xl font-bold mb-4 text-gray-400">
                   {selectedProject.name}
                 </h3>
-                <p className=" mb-2 font-semibold text-gray-300">Main Technologies:</p>
+                <p className=" mb-2 font-semibold text-gray-300">
+                  Main Technologies:
+                </p>
                 <ul className="list-disc list-inside mb-4 text-gray-400">
                   {selectedProject.technologies.map((tech, index) => (
                     <li key={index}>{tech}</li>
                   ))}
                 </ul>
-                <p className="text-gray-400 mb-4">{selectedProject.description}</p>
+                <p className="text-gray-400 mb-4">
+                  {selectedProject.description}
+                </p>
                 <p className="text-gray-400 mb-4">{selectedProject.details}</p>
                 <div className="flex space-x-4 mt-10">
                   <a
