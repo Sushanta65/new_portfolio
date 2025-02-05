@@ -9,6 +9,7 @@ import {
   FaGit,
   FaNpm,
 } from "react-icons/fa";
+import { RiNextjsFill, RiNextjsLine } from "react-icons/ri";
 import {
   SiFirebase,
   SiMongodb,
@@ -16,49 +17,51 @@ import {
   SiNetlify,
   SiPostman,
   SiHeroku,
+  SiExpress,
 } from "react-icons/si";
 
 const SkillsSection = () => {
   const skills = [
-    {
-      name: "React",
-      icon: <FaReact className="text-blue-500 text-6xl" />,
-      description:
-        "React is a powerful JavaScript library used for building user interfaces. I specialize in reusable components, state management, and SPAs.",
-      proficiency: "Expert",
-      progress: "90%",
-    },
-    {
-      name: "HTML5",
-      icon: <FaHtml5 className="text-orange-500 text-6xl" />,
-      description:
-        "HTML5 is the foundation of web content. I ensure semantic correctness, accessibility, and integration of modern APIs.",
-      proficiency: "Expert",
-      progress: "95%",
-    },
-    {
-      name: "CSS3",
-      icon: <FaCss3Alt className="text-blue-400 text-6xl" />,
-      description:
-        "CSS3 allows me to create responsive and visually appealing designs using advanced features like Flexbox, Grid, and animations.",
-      proficiency: "Experienced",
-      progress: "85%",
-    },
     {
       name: "JavaScript",
       icon: <FaJs className="text-yellow-500 text-6xl" />,
       description:
         "JavaScript powers interactivity. I am proficient in ES6+ features, event handling, and integrating libraries/frameworks.",
       proficiency: "Experienced",
-      progress: "80%",
+      
     },
+    {
+      name: "React",
+      icon: <FaReact className="text-blue-500 text-6xl" />,
+      description:
+        "React is a powerful JavaScript library used for building user interfaces. I specialize in reusable components, state management, and SPAs.",
+      proficiency: "Expert",
+     
+    },
+    {
+      name: "Next.js",
+      icon: <RiNextjsLine className="text-blue500 text-6xl"/>,
+      description: "Next.js is a React Framework for bulding user interface and manage client and server side together",
+      proficiency: "Familiar"
+    },
+    
+    
+   
     {
       name: "Node.js",
       icon: <FaNodeJs className="text-green-500 text-6xl" />,
       description:
         "Node.js enables scalable and efficient backend solutions. I use it for building RESTful APIs and handling server-side logic.",
       proficiency: "Experienced",
-      progress: "75%",
+      
+    },
+    {
+      name: "Express.js",
+      icon: <SiExpress className=" text-6xl" />,
+      description:
+        "Express.js enables scalable and efficient backend solutions. I use it for building RESTful APIs and handling server-side logic.",
+      proficiency: "Experienced",
+      
     },
     {
       name: "MongoDB",
@@ -66,7 +69,7 @@ const SkillsSection = () => {
       description:
         "MongoDB is a NoSQL database where I manage large datasets, design schemas, and perform queries for scalable applications.",
       proficiency: "Familiar",
-      progress: "70%",
+     
     },
     {
       name: "Firebase",
@@ -74,7 +77,7 @@ const SkillsSection = () => {
       description:
         "Firebase provides real-time databases and authentication. I use it for secure and rapid app development.",
       proficiency: "Familiar",
-      progress: "65%",
+     
     },
     {
       name: "Tailwind CSS",
@@ -82,7 +85,7 @@ const SkillsSection = () => {
       description:
         "Tailwind CSS accelerates custom styling. I use it for responsive, mobile-first designs with minimal custom CSS.",
       proficiency: "Experienced",
-      progress: "85%",
+     
     },
   ];
 
@@ -157,12 +160,7 @@ const SkillsSection = () => {
                     {skill.proficiency}
                   </span>
                 </p>
-                <div className="relative w-full h-3 bg-base-200 rounded-full">
-                  <div
-                    className="absolute top-0 left-0 h-full bg-green-600 rounded-full"
-                    style={{ width: skill.progress }}
-                  ></div>
-                </div>
+                
                 <p className="text-base-content/60 text-xs mt-1">
                   {skill.progress}
                 </p>

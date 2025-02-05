@@ -20,7 +20,7 @@ const HeroSection = () => {
           </div>
 
           {/* Left Side - Designation, Animation, and Button */}
-          <div className="lg:w-1/2 text-center lg:text-left">
+          <div className="lg:w-1/2 text-center lg:text-left mt-10 lg:mt-0">
             <h1 className="text-4xl lg:text-5xl font-bold mb-4">
               Hi, I'm <span className="text-red-600">Susanto CD</span>
             </h1>

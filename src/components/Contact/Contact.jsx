@@ -27,7 +27,7 @@ const ContactSection = () => {
             </div>
             <div className="flex items-center">
               <FaPhone className="text-red-500 text-xl mr-4" />
-              <p>(+880)-1855347765</p>
+              <p>(+880)-1923260216</p>
             </div>
             <div className="flex items-center">
               <FaMapMarkerAlt className="text-red-500 text-xl mr-4" />
@@ -36,14 +36,14 @@ const ContactSection = () => {
           </div>
           <div className="flex space-x-6 mt-6">
             <a
-              href="https://facebook.com"
+              href="https://facebook.com/susanto-chandra001"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaFacebook className=" hover:text-red-500 text-2xl" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/susanto.chandra"
               target="_blank"
               rel="noopener noreferrer"
             >
