@@ -57,7 +57,7 @@ const ProjectsSection = () => {
       <div className="w-4/5 mx-auto">
         <div className="text-center mb-20 ">
           <h2 className="text-4xl font-bold text-center mb-5 ">
-            My <span className="text-red-600">Projects</span>
+            My <span className="text-blue-900">Projects</span>
           </h2>
           <p>
             I have done a lot of projects with ReactJS There are some project
@@ -121,7 +121,7 @@ const ProjectsSection = () => {
               </div>
               <button
                 onClick={handleCloseDetails}
-                className="btn btn-sm bg-red-600 text-white rounded hover:bg-red-700 mt-5 w-full md:w-auto"
+                className="btn btn-sm bg-blue-900 text-white rounded hover:bg-blue-950 mt-5 w-full md:w-auto"
               >
                 Close
               </button>

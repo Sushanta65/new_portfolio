@@ -22,15 +22,15 @@ const ContactSection = () => {
           </p>
           <div className="space-y-4">
             <div className="flex items-center">
-              <FaEnvelope className="text-red-500 text-xl mr-4" />
+              <FaEnvelope className="text-blue-900 text-xl mr-4" />
               <p>susanto.chandra001@gmail.com</p>
             </div>
             <div className="flex items-center">
-              <FaPhone className="text-red-500 text-xl mr-4" />
+              <FaPhone className="text-blue-900 text-xl mr-4" />
               <p>(+880)-1923260216</p>
             </div>
             <div className="flex items-center">
-              <FaMapMarkerAlt className="text-red-500 text-xl mr-4" />
+              <FaMapMarkerAlt className="text-blue-900 text-xl mr-4" />
               <p>Gazipur, Dhaka, Bangladesh</p>
             </div>
           </div>
@@ -40,21 +40,21 @@ const ContactSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook className=" hover:text-red-500 text-2xl" />
+              <FaFacebook className=" hover:text-blue-900 text-2xl" />
             </a>
             <a
               href="https://linkedin.com/in/susanto.chandra"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className=" hover:text-red-500 text-2xl" />
+              <FaLinkedin className=" hover:text-blue-900 text-2xl" />
             </a>
             <a
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram className=" hover:text-red-500 text-2xl" />
+              <FaInstagram className=" hover:text-blue-900 text-2xl" />
             </a>
           </div>
         </div>
@@ -72,30 +72,30 @@ const ContactSection = () => {
             <input
               type="email"
               placeholder="Email"
-              className="w-full px-4 py-2  border  rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="w-full px-4 py-2  border  rounded focus:outline-none focus:ring-2 focus:ring-blue-900"
               required
             />
             <input
               type="text"
               placeholder="Full Name"
-              className="w-full px-4 py-2  border  rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="w-full px-4 py-2  border  rounded focus:outline-none focus:ring-2 focus:ring-blue-900"
               required
             />
             <input
               type="text"
               placeholder="Subject"
-              className="w-full px-4 py-2  border  rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="w-full px-4 py-2  border  rounded focus:outline-none focus:ring-2 focus:ring-blue-900"
               required
             />
             <textarea
               placeholder="Message"
               rows="5"
-              className="w-full px-4 py-2  border  rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="w-full px-4 py-2  border  rounded focus:outline-none focus:ring-2 focus:ring-blue-900"
               required
             ></textarea>
             <button
               type="submit"
-              className="px-6 py-2 bg-transparent border border-red-500 text-red-500 rounded hover:bg-red-500 hover:text-white transition"
+              className="px-6 py-2 bg-transparent border border-blue-900 text-blue-900 rounded hover:bg-blue-900 hover:text-white transition"
             >
               Send Message
             </button>

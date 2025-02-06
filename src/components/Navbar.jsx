@@ -18,16 +18,16 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar fixed top-0 left-0 w-full z-50 bg-red-600 text-white shadow-lg  mb-20">
-      <div className="w-11/12 mx-auto flex items-center justify-between">
-        {/* Logo */}
+    <div className="navbar  fixed top-0 left-0 w-full z-50 bg-blue-900 text-white shadow-lg  mb-20">
+      <div className="w-4/5 mx-auto flex items-center justify-between">
+        
         <div className="flex-1">
           <Link to="/" className="text-2xl font-bold">
             Susanto CD
           </Link>
         </div>
 
-        {/* Hamburger Menu for Mobile */}
+       
         <div className="lg:hidden">
           <button
             className="btn btn-circle btn-outline text-white"
@@ -37,7 +37,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Navigation Links */}
+      
         <div
           className={`lg:flex flex-col lg:flex-row lg:items-center lg:static absolute top-16 left-0 w-full lg:w-auto bg-red-600 lg:bg-transparent shadow-lg lg:shadow-none transition-transform ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
@@ -49,7 +49,7 @@ const Navbar = () => {
                 href="#home"
                 className={({ isActive }) =>
                   isActive
-                    ? "active text-blue-300 bg-red-900 px-2 py-1 rounded"
+                    ? "active text-blue-300 bg-blue-900 px-2 py-1 rounded"
                     : "px-2 py-1"
                 }
               >
@@ -64,7 +64,7 @@ const Navbar = () => {
                 href="#skills"
                 className={({ isActive }) =>
                   isActive
-                    ? "active text-blue-300 bg-red-900 px-2 py-1 rounded"
+                    ? "active text-blue-300 bg-blue-900 px-2 py-1 rounded"
                     : "px-2 py-1"
                 }
               >
@@ -76,7 +76,7 @@ const Navbar = () => {
                 href="#projects"
                 className={({ isActive }) =>
                   isActive
-                    ? "active text-blue-300 bg-red-900 px-2 py-1 rounded"
+                    ? "active text-blue-300 bg-blue-900 px-2 py-1 rounded"
                     : "px-2 py-1"
                 }
               >
@@ -88,7 +88,7 @@ const Navbar = () => {
                 href="#education"
                 className={({ isActive }) =>
                   isActive
-                    ? "active text-blue-300 bg-red-900 px-2 py-1 rounded"
+                    ? "active text-blue-300 bg-blue-900 px-2 py-1 rounded"
                     : "px-2 py-1"
                 }
               >
@@ -100,7 +100,7 @@ const Navbar = () => {
                 href="#contact"
                 className={({ isActive }) =>
                   isActive
-                    ? "active text-blue-300 bg-red-900 px-2 py-1 rounded"
+                    ? "active text-blue-300 bg-blue-900 px-2 py-1 rounded"
                     : "px-2 py-1"
                 }
               >

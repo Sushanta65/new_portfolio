@@ -27,7 +27,7 @@ const SkillsSection = () => {
       icon: <FaJs className="text-yellow-500 text-6xl" />,
       description:
         "JavaScript powers interactivity. I am proficient in ES6+ features, event handling, and integrating libraries/frameworks.",
-      proficiency: "Experienced",
+      proficiency: "Expert",
       
     },
     {
@@ -84,7 +84,7 @@ const SkillsSection = () => {
       icon: <SiTailwindcss className="text-blue-300 text-6xl" />,
       description:
         "Tailwind CSS accelerates custom styling. I use it for responsive, mobile-first designs with minimal custom CSS.",
-      proficiency: "Experienced",
+      proficiency: "Expert",
      
     },
   ];
@@ -130,7 +130,7 @@ const SkillsSection = () => {
         {/* Heading and Introduction */}
         <div className="text-center mb-20 ">
           <h2 className="text-4xl font-bold text-center mb-5 ">
-            My <span className="text-red-600">Skills</span>
+            My <span className="text-blue-900">Skills</span>
           </h2>
           <p className="w-4/5 mx-auto">
             Over the years, I’ve built expertise in a variety of modern web
@@ -143,29 +143,27 @@ const SkillsSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {skills.map((skill, index) => (
             <div
-              key={index}
-              className="p-6 border border-base-300 rounded-lg shadow-xl bg-base-100 flex flex-col items-center text-center hover:shadow-2xl transition-shadow"
-            >
-              {skill.icon}
-              <p className="mt-4 text-base-content text-xl font-semibold">
-                {skill.name}
-              </p>
-              <p className="mt-2 text-base-content/70 text-sm">
-                {skill.description}
-              </p>
+            key={index}
+            className="p-6 border border-base-300 rounded-lg shadow-xl bg-base-100 flex flex-col items-center text-center hover:shadow-2xl transition-shadow h-full"
+          >
+            {skill.icon}
+            <p className="mt-4 text-base-content text-xl font-semibold">
+              {skill.name}
+            </p>
+          
+            {/* Ensures content takes up equal space */}
+            <div className="flex-grow flex flex-col justify-between w-full">
+              <p className="mt-2 text-base-content/70 text-sm">{skill.description}</p>
+          
               <div className="w-full mt-4">
                 <p className="text-base-content/90 text-sm mb-1">
                   Proficiency:{" "}
-                  <span className="font-bold text-blue-600">
-                    {skill.proficiency}
-                  </span>
+                  <span className="font-bold text-blue-600">{skill.proficiency}</span>
                 </p>
-                
-                <p className="text-base-content/60 text-xs mt-1">
-                  {skill.progress}
-                </p>
+                <p className="text-base-content/60 text-xs mt-1">{skill.progress}</p>
               </div>
             </div>
+          </div>
           ))}
         </div>
 

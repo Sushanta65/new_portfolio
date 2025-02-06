@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-red-600  py-6">
+    <footer className="bg-blue-900  py-6">
       <div className="w-4/5 mx-auto text-center text-white">
       
         <p className="text-sm">
@@ -10,7 +10,7 @@ const Footer = () => {
           reserved.
         </p>
         <p className="text-sm">
-          Made with <span className="text-red-500">❤</span> using React and
+          Made with <span className="text-blue-900">❤</span> using React and
           Tailwind CSS.
         </p>
       </div>

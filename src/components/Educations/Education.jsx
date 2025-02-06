@@ -3,7 +3,7 @@ const EducationSection = () => {
     {
       degree: "Complete Web Development Course",
       institution: "Programming Hero",
-      duration: "2021 - 2022",
+      duration: "Jun 2024 - Present",
       description:
         "Completed a professional web development course focusing on the MERN stack. Acquired skills in front-end and back-end development, including React, Node.js, MongoDB, and Express.js.",
       highlight: true,
@@ -31,7 +31,7 @@ const EducationSection = () => {
       <div className="w-4/5 mx-auto">
         <div className="text-center mb-20 ">
           <h2 className="text-4xl font-bold text-center mb-5 ">
-            My <span className="text-red-600">Education</span>
+            My <span className="text-blue-900">Education</span>
           </h2>
           <p className="w-4/5 mx-auto">
             "Here is a glimpse of my educational journey, showcasing my academic
@@ -51,7 +51,7 @@ const EducationSection = () => {
               }`}
             >
               <h3
-                className={`text-xl font-semibold ${
+                className={`text-xl font-semibold pb-3 ${
                   item.highlight
                     ? "text-blue-700 dark:text-blue-300"
                     : "text-gray-800 dark:text-gray-200"
@@ -70,7 +70,7 @@ const EducationSection = () => {
               </p>
               <p
                 className={`text-sm ${
-                  item.duration === "2022 - Present"
+                  item.duration === "2022 - Present" || item.duration === "Jun 2024 - Present"
                     ? "text-green-700 dark:text-green-400"
                     : "text-gray-600 dark:text-gray-400"
                 }`}

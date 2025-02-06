@@ -23,17 +23,19 @@ const HeroSection = () => {
           {/* Left Side - Designation, Animation, and Button */}
           <div className="lg:w-1/2 text-center lg:text-left mt-10 lg:mt-0">
             <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-              Hi, I'm <span className="text-red-600">Susanto CD</span>
+              Hi, I'm <span className="text-blue-900">Susanto CD</span>
             </h1>
-            <h2 className="text-2xl lg:text-3xl font-semibold mb-6">
+            <h2 className="text-2xl lg:text-3xl font-semibold mb-6 mt-3">
               <TypeAnimation
                 sequence={[
                   "Frontend Developer",
                   2000,
-                  "React Expert",
+                  "React, Next.js Expert",
                   2000,
-                  "JavaScript Developer",
+                  "MERN Stack Developer",
                   2000,
+                  "Tailwind-Css Expert",
+                  2000
                 ]}
                 wrapper="span"
                 cursor={true}
@@ -41,9 +43,7 @@ const HeroSection = () => {
               />
             </h2>
             <p className="pt-4 pb-8">
-              Always ready to face any kind of situation with coding and manage
-              the works. Aiming to leverage my skills to successfully fill the
-              Front End Web development role at your company.
+            I’m a passionate Frontend Developer specializing in React.js, Next.js, and the MERN stack. With a strong focus on building scalable and user-friendly web apps, I love crafting seamless digital experiences and solving complex problems through code.
             </p>
             <div className="flex justify-center lg:justify-start gap-6 text-2xl pb-10">
               <a
@@ -58,7 +58,7 @@ const HeroSection = () => {
                 href="https://github.com/Sushanta65"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-800 hover:text-gray-900 dark:bg-red-600 dark:hover:text-gray-100"
+                className="text-gray-800 hover:text-gray-900 dark:bg-blue-900 dark:hover:text-gray-100"
               >
                 <FaGithub />
               </a>
@@ -66,7 +66,7 @@ const HeroSection = () => {
                 href="https://twitter.com/your-username"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-600"
+                className="text-blue-400 hover:text-blue-900"
               >
                 <FaFacebook />
               </a>
@@ -74,9 +74,9 @@ const HeroSection = () => {
             <a
               href={resume}
               download
-              className="btn btn-primary bg-red-600 hover:bg-red-700 border-none text-white mb-6"
+              className="btn btn-primary bg-blue-900 hover:bg-blue-700 border-none text-white mb-6"
             >
-              Download CV
+              Download Resume
             </a>
 
             {/* Social Media Links */}
