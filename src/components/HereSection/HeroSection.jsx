@@ -2,6 +2,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import myPhoto from "../../assets/susanto.png";
+import resume from "../../assets/resume/Resume of Frontend Developer - Susanto Chandra Das.pdf"
 
 const HeroSection = () => {
   return (
@@ -71,7 +72,7 @@ const HeroSection = () => {
               </a>
             </div>
             <a
-              href="/path-to-your-cv.pdf"
+              href={resume}
               download
               className="btn btn-primary bg-red-600 hover:bg-red-700 border-none text-white mb-6"
             >
